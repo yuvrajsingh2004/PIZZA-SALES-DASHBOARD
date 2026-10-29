@@ -1,107 +1,92 @@
-# 🍕 Pizza Sales Dashboard | Microsoft Excel
+# Pizza Sales Dashboard — Microsoft Excel
 
-An interactive **Pizza Sales Dashboard built using Microsoft Excel** to analyze sales performance, order volume, pizza size distribution, and monthly trends through data visualization.
+An interactive Excel dashboard built to explore pizza sales performance, order volume, pizza-size distribution, and monthly trends.
 
-## 📊 Project Overview
+## Dashboard Preview
 
-How can raw sales data be transformed into meaningful business insights?
+Open `images/dashboard_preview.png` to see the dashboard screenshot, if included in this repository.
 
-This project uses Excel dashboards and charts to present key sales metrics in a clear, interactive, and user-friendly format.
+## Project Objectives
 
-## 🎯 Project Objectives
+- Summarize overall sales and order volume.
+- Compare sales across pizza sizes/categories.
+- Explore monthly sales trends.
+- Compare order counts by month.
+- Provide an interactive month filter for exploring the data.
 
-- Analyze overall pizza sales performance.
-- Compare sales across pizza categories and sizes.
-- Track monthly sales trends.
-- Analyze order counts across different months.
-- Create an interactive dashboard for exploring sales data.
+## Key Metrics
 
-## 🛠️ Tools & Technologies
+- **Total Sales:** 817,860.05 (currency not specified in the workbook)
+- **Unique Orders:** 21,350
+- **Order-detail rows:** 48,620
+
+> Note: Confirm the currency and metric definitions before using the figures in a formal business report. The workbook's dashboard labels the second KPI as “Total Count”; the source `orders` table contains 21,350 order records.
+
+## Tools and Excel Features
 
 - Microsoft Excel
-- Pivot Tables
-- Pivot Charts
-- Slicers
-- KPI Cards
-- Data Visualization
-- Sales Analysis
+- Pivot tables / summarized tables
+- Pivot charts and standard charts
+- Month slicer / interactive filtering
+- KPI cards
+- Dashboard layout and formatting
 
-## 📈 Dashboard Features
+## Workbook Contents
 
-### 1. Total Sales by Pizza Slice
-Visualizes the distribution of sales across pizza categories or sizes represented in the dashboard.
+The workbook contains these sheets:
 
-### 2. Order Count by Pizza Size
-Uses a doughnut chart to visualize order distribution across different pizza sizes.
+| Sheet | Purpose |
+|---|---|
+| `pizza_types` | Pizza names, categories, and ingredients |
+| `pizzas` | Pizza identifiers, sizes, and prices |
+| `order_details` | Order line items, quantities, pizza attributes, and sales values |
+| `orders` | Order dates, times, hours, and month fields |
+| `Sheet3` | Summary tables used for dashboard analysis |
+| `Sheet1` | Dashboard canvas |
+| Other sheets | Additional source/export or summary sheets retained from the original workbook |
 
-### 3. Monthly Sales Analysis
-A line chart displays monthly sales trends and helps compare performance across months.
+## Analysis Workflow
 
-### 4. Monthly Order Count
-A horizontal bar chart compares order counts across months.
+1. **Inspect the source tables** to understand pizza types, sizes, prices, orders, and line items.
+2. **Prepare and organize fields** used for analysis, including dates/months, quantities, prices, and total sales.
+3. **Summarize the data** using Excel summary/PivotTable-style tables.
+4. **Build charts** for sales distribution, order count by pizza size, monthly sales, and monthly order count.
+5. **Add a month slicer** so viewers can interact with the dashboard.
+6. **Present key metrics** in KPI cards and format the dashboard for readability.
 
-### 5. Interactive Month Slicer
-Allows users to filter dashboard data by month and explore specific periods.
+## How to Use
 
-### 6. KPI Cards
-Highlights important metrics at a glance:
+1. Download or clone this repository.
+2. Open `data/pizza_sales_dashboard.xlsx` in Microsoft Excel (desktop Excel is recommended).
+3. Go to the `Sheet1` tab to view the dashboard.
+4. Use the month slicer to filter the dashboard, if slicer connections are supported by your Excel version.
+5. Explore the source tables to inspect the underlying data.
 
-- **Total Sales:** 817,860.05
-- **Total Count:** 21,350
+Some Excel-specific interactive objects may not work in alternative spreadsheet applications. For best results, use Microsoft Excel.
 
-*Note: The currency is not specified. Verify the definition of Total Count before interpreting it as an order count.*
-
-## 🔄 Project Workflow
-
-1. **Data Understanding:** Explored the dataset and identified relevant fields.
-2. **Data Preparation:** Organized the data required for sales and order analysis.
-3. **Data Summarization:** Used summary tables to analyze sales and order counts.
-4. **Data Visualization:** Created pie, doughnut, line, and bar charts.
-5. **Dashboard Development:** Combined charts and KPI cards into a single dashboard.
-6. **Interactivity:** Added a month slicer for dynamic filtering.
-7. **Formatting:** Applied consistent colors, titles, and layouts to improve readability.
-
-## 💡 Key Learnings
-
-- Understanding and analyzing structured sales data.
-- Summarizing data using Excel tables and PivotTables.
-- Selecting appropriate charts for different analytical purposes.
-- Building interactive dashboards using slicers.
-- Presenting business metrics through visualizations.
-- Designing dashboards that communicate information clearly.
-
-## 📁 Repository Structure
+## Repository Structure
 
 ```text
 pizza-sales-excel-dashboard/
-│
 ├── data/
 │   └── pizza_sales_dashboard.xlsx
-│
 ├── documentation/
 │   └── project_documentation.pdf
-│
 ├── images/
 │   └── dashboard_preview.png
-│
 ├── DATA_DICTIONARY.md
 ├── README.md
 ├── LICENSE
 └── .gitignore
 ```
 
-## 🚀 How to Use
+## Notes and Limitations
 
-1. Download or clone this repository.
-2. Open `data/pizza_sales_dashboard.xlsx` in Microsoft Excel.
-3. Navigate to the `Sheet1` worksheet to view the dashboard.
-4. Use the month slicer to explore monthly performance.
-5. Explore the other worksheets to inspect the source data and summaries.
+- The workbook's dashboard shows sales as `817860.05`; the currency is not explicitly confirmed in the workbook.
+- Validate chart totals and filter behavior in Excel before presenting results.
+- If the dataset came from a third-party source, add its original source link and required attribution here.
+- This repository is an Excel analytics project; it does not contain a separate application or executable code.
 
-**Recommendation:** Use the desktop version of Microsoft Excel for the best compatibility with interactive dashboard features.
+## Author
 
-## 🔮 Future Improvements
-
-- Add more detailed sales performance indicators.
-- Identify top-performing pizza categories.
-- Analyze average order value and customer ordering
+Add your name and LinkedIn/GitHub profile here before publishing.
